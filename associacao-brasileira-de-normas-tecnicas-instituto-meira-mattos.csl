@@ -2,7 +2,7 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" demote-non-dropping-particle="never" default-locale="pt-BR">
   <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title>Escola de Comando e Estado-Maior do Exército - Instituto Meira Mattos - ABNT (Portuguese - Brazil)</title>
+    <title>Escola de Comando e Estado-Maior do ExÃ©rcito - Instituto Meira Mattos - ABNT (Portuguese - Brazil)</title>
     <title-short>ABNT-ECEME/IMM</title-short>
     <id>http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas-instituto-meira-mattos</id>
     <link href="http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas-instituto-meira-mattos" rel="self"/>
@@ -15,7 +15,7 @@
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>Brazilian Standard Style - ECEME/IMM</summary>
-    <updated>2017-06-23T14:43:41+00:00</updated>
+    <updated>2017-06-27T03:09:32+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="pt-BR">
@@ -75,7 +75,6 @@
     </choose>
   </macro>
   <macro name="translator">
-    <text value="Tradução "/>
     <names variable="translator" delimiter=", ">
       <name delimiter="; " sort-separator=" " delimiter-precedes-last="always">
         <name-part name="given" text-case="capitalize-first"/>
@@ -157,7 +156,7 @@
   <macro name="access">
     <choose>
       <if type="article-magazine article-journal" match="any">
-        <text variable="URL" prefix=". Disponível em: &lt;" suffix="&gt;"/>
+        <text variable="URL" prefix=". DisponÃ­vel em: &lt;" suffix="&gt;"/>
         <date variable="accessed" prefix=". Acesso em: ">
           <date-part name="day" suffix=" "/>
           <date-part name="month" form="short" suffix=" " text-case="lowercase"/>
@@ -165,7 +164,7 @@
         </date>
       </if>
       <else>
-        <text variable="URL" prefix="Disponível em: &lt;" suffix="&gt;"/>
+        <text variable="URL" prefix="DisponÃ­vel em: &lt;" suffix="&gt;"/>
         <date variable="accessed" prefix=". Acesso em: ">
           <date-part name="day" suffix=" "/>
           <date-part name="month" form="short" suffix=" " text-case="lowercase"/>
@@ -423,7 +422,7 @@
           <group>
             <text macro="author" suffix=". "/>
             <text macro="title" suffix=". "/>
-            <text macro="translator" suffix=". "/>
+            <text macro="translator" prefix = "TraduÃ§Ã£o " suffix=". "/>
             <text macro="edition" suffix=". "/>
             <text macro="publisher" suffix=", "/>
             <text macro="issued-year" suffix=". "/>
@@ -443,7 +442,7 @@
             <text macro="secondary-contributors" suffix=". "/>
             <text macro="container-title" suffix=". "/>
             <text variable="collection-title" suffix=". "/>
-            <text macro="translator" suffix=". "/>
+            <text macro="translator" prefix = "TraduÃ§Ã£o " suffix=". "/>
             <text macro="edition" suffix=". "/>
             <group suffix=". ">
               <text macro="publisher" suffix=", "/>
@@ -457,7 +456,7 @@
           <group>
             <text macro="author" suffix=". "/>
             <text macro="title" suffix=". "/>
-            <text macro="translator" suffix=". "/>
+            <text macro="translator" prefix = "TraduÃ§Ã£o " suffix=". "/>
             <text macro="container-title" suffix=", "/>
             <text variable="collection-title" suffix=". "/>
             <text variable="note" suffix=", "/>
@@ -481,7 +480,7 @@
             <text macro="edition" suffix=", "/>
             <text macro="locators" suffix=", "/>
             <text macro="issued"/>
-            <text macro="translator" suffix=". "/>
+            <text macro="translator" prefix = "TraduÃ§Ã£o " suffix=". "/>
             <text macro="access"/>
           </group>
         </else-if>
@@ -543,7 +542,7 @@
           <text macro="container-title"/>
           <text variable="collection-title" prefix=", " suffix="."/>
           <text variable="genre"/>
-          <text variable="number" prefix=", nº " suffix="."/>
+          <text variable="number" prefix=", nÂº " suffix="."/>
           <text macro="locators"/>
           <group delimiter=". " prefix=". ">
             <text macro="publisher"/>
